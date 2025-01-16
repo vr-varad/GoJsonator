@@ -16,6 +16,28 @@ A simple and efficient JSON parser written in Go. This parser takes JSON input a
    ./main
    ```
 
+## Example
+
+### Input
+```
+{
+  "name": "John Doe",
+  "age": 30,
+  "isStudent": false,
+  "courses": ["Go", "JSON Parsing"]
+}
+```
+
+### Output
+```
+Object:
+Key: isStudent, Value: Boolean: false
+Key: courses, Value: Array:
+Index 0: String: Go
+Index 1: String: JSON Parsing
+Key: name, Value: String: John Doe
+Key: age, Value: Number: 30
+```
 
 ## How It Works
 1. The parser breaks the JSON string into tokens.
